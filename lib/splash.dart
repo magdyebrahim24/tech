@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:tech/make-exam.dart';
 import 'package:tech/widgets/buttons.dart';
-
 import 'home.dart';
+
 class Splash extends StatefulWidget {
   @override
   _SplashState createState() => _SplashState();
