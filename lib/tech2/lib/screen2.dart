@@ -41,29 +41,38 @@ class _Screen2State extends State<Screen2> {
       ),
     key: _mainkey,
       drawer: Drawer(
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: <Widget>[
-            Padding(
-            padding: EdgeInsets.symmetric(vertical: 50,horizontal: 40)
-            ,child: Text("teach",style: TextStyle(color: Colors.indigo[700],fontSize: 28,fontWeight: FontWeight.bold),)),
-            SizedBox(
-              height: 10,
-            ),
-            InkWell(
-              onTap: (){},
-              child: Container(
-                margin: EdgeInsets.all(10),
-                height: 50,
-                width: 240,
-                decoration: BoxDecoration(
-                  color: Colors.deepPurple[700],
-                  borderRadius: BorderRadius.circular(50),
-                ),
-                child: Center(
-                  child: Text("Start Exam",style: TextStyle(color: Colors.white,fontSize: 25),),
-                ),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: <Widget>[
+              Padding(
+                  padding: EdgeInsets.symmetric(vertical: 50, horizontal: 40),
+                  child: Text(
+                    "teach",
+                    style: TextStyle(
+                        color: Colors.indigo[700],
+                        fontSize: 28,
+                        fontWeight: FontWeight.bold),
+                  )),
+              SizedBox(
+                height: 10,
               ),
+              InkWell(
+                onTap: () {},
+                child: Container(
+                  margin: EdgeInsets.all(10),
+                  height: 50,
+                  width: 240,
+                  decoration: BoxDecoration(
+                    color: Colors.deepPurple[700],
+                    borderRadius: BorderRadius.circular(50),
+                  ),
+                  child: Center(
+                    child: Text(
+                      "Start Exam",
+                      style: TextStyle(color: Colors.white, fontSize: 25),
+                    ),
+                  ),
+                ),
             ),
             InkWell(
               onTap: (){},
