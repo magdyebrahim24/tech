@@ -1,30 +1,36 @@
 import 'package:flutter/material.dart';
+import 'package:tech/constants.dart';
 
 // ignore: must_be_immutable
-class Item extends StatefulWidget {
-  Item({this.icn,this.txt});
-  IconData icn ;
-  final txt ;
-  @override
-  _ItemState createState() => _ItemState();
-}
-
-class _ItemState extends State<Item> {
+class Item extends StatelessWidget {
+  Item({this.icn, this.txt, this.fun});
+  IconData icn;
+  final txt;
+  final Function fun;
   @override
   Widget build(BuildContext context) {
-    return Row(
-      children: <Widget>[
-        Padding(
-          padding: EdgeInsets.symmetric(
-              horizontal: MediaQuery.of(context).size.width * .05),
-          child: Icon(
-            widget.icn,
-            color: Color(0xff0c6d630),
-            size: 26,
-          ),
+    return InkWell(
+      onTap: fun,
+      child: Padding(
+        padding: const EdgeInsets.all(10.0),
+        child: Row(
+          children: <Widget>[
+            Icon(
+                icn,
+                color: primaryColor,
+                size: 28,
+              ),
+            SizedBox(width: 10,),
+            Expanded(
+                child: Text(txt,
+                    style: TextStyle(
+                        color: primaryColor,
+                        fontSize: 20,
+                        fontWeight: FontWeight.w500
+                    ))),
+          ],
         ),
-        Expanded(child: Text(widget.txt, style: TextStyle(color: Color(0xff0c6d630)))),
-      ],
+      ),
     );
   }
 }

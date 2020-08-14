@@ -1,12 +1,15 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:tech/constants.dart';
+import 'package:tech/screens/home.dart';
+import 'package:tech/widgets/buttons.dart';
 
-class Home extends StatefulWidget {
+class Exam extends StatefulWidget {
   @override
-  _HomeState createState() => _HomeState();
+  _ExamState createState() => _ExamState();
 }
 
-class _HomeState extends State<Home> {
+class _ExamState extends State<Exam> {
   List questionList = [
     'A True False Question1 .....',
     'A True False Question2 .....',
@@ -19,12 +22,27 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text(
-          'Tech',
+        appBar: AppBar(
+          elevation: 0.0,
+          backgroundColor: primaryColor,
+          title: Text(
+            'tech',
+//          style: KMegaText
+          ),
+          leading: CircleButton(
+            icn: Icons.arrow_back_ios,
+            clor: backgroundColor,
+            fun: () {
+              Navigator.pushReplacement(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => Home(),
+                  ));
+            },
+          ),
+          centerTitle: true,
         ),
-        centerTitle: true,
-      ),
+
       body: ListView.builder(
 
         itemCount: questionList.length,

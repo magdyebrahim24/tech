@@ -21,8 +21,7 @@ class Screen1State extends State<Screen1> {
       textDirection: TextDirection.rtl,
       child: Scaffold(
         key: mainkey,
-        drawer: Drawer(
-        ),
+        drawer: Drawer(),
 
         backgroundColor: Colors.white,
         appBar: AppBar(

@@ -1,11 +1,10 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
-import 'package:tech/splash.dart';
+import 'package:tech/screens/home.dart';
 import 'package:tech/widgets/buttons.dart';
 import 'package:tech/widgets/makeExamInfoItem.dart';
 
-import 'constants.dart';
+import '../constants.dart';
 
 class MakeExam extends StatefulWidget {
   @override
@@ -36,7 +35,7 @@ class _MakeExamState extends State<MakeExam> {
             Navigator.pushReplacement(
                 context,
                 MaterialPageRoute(
-                  builder: (context) => Splash(),
+                  builder: (context) => Home(),
                 ));
           },
         ),

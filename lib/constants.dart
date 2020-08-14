@@ -12,7 +12,7 @@ final kTextFormDecrotion = InputDecoration(
   hintStyle: TextStyle(color: primaryColor.withOpacity(.5),fontSize: 15),
 );
 
-const KMegaText = TextStyle(color: primaryColor , fontSize: 65, fontFamily: 'LobsterTwo');
+const KLogoText = TextStyle(color: primaryColor , fontSize: 65, fontFamily: 'LobsterTwo');
 const KTextFormStyle = TextStyle(color: primaryColor, fontSize: 15);
 const KText = TextStyle(color: primaryColor, fontSize: 14);
 
