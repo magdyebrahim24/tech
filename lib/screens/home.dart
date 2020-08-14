@@ -181,7 +181,10 @@ class DrawerContent extends StatelessWidget {
 //                ),
 //            ),
 
-       /* make exam button */
+       /* make exam button
+       * i created a button to use it in anywhere in project
+       * you will find it in widget package => buttons file
+       * */
         RoundedButton(fun: (){
           Navigator.pushReplacement(
               context, MaterialPageRoute(builder: (context) => MakeExam()));
@@ -213,7 +216,8 @@ class DrawerContent extends StatelessWidget {
           height: 30,
         ),
 
-        /* drawer items */
+        /* drawer items
+        I created stateless class in widget package => item file */
         Item(icn: Icons.home,txt: 'Home',fun: (){},),
         Item(icn: Icons.line_style,txt: 'Library',fun: (){},),
         Item(icn: Icons.event,txt: 'Courses',fun: (){},),
