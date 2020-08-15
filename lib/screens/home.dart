@@ -2,7 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:tech/constants.dart';
 import 'package:tech/screens/exam.dart';
-import 'package:tech/screens/make-exam.dart';
+import 'file:///C:/Flutter-Projects/tech/lib/screens/makeExam/makeExam1.dart';
 import 'package:tech/widgets/buttons.dart';
 import 'package:tech/widgets/item.dart';
 class Home extends StatefulWidget {
@@ -187,7 +187,7 @@ class DrawerContent extends StatelessWidget {
        * */
         RoundedButton(fun: (){
           Navigator.pushReplacement(
-              context, MaterialPageRoute(builder: (context) => MakeExam()));
+              context, MaterialPageRoute(builder: (context) => MakeExamP1()));
         },text: 'Make Exam',),
         SizedBox(
           height: 10,

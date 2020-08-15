@@ -23,6 +23,9 @@ class _SplashState extends State<Splash> {
     super.initState();
   }
 
+  void dispose(){
+    super.dispose();
+  }
   @override
   Widget build(BuildContext context) {
     return Scaffold(

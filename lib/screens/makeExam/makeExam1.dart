@@ -1,17 +1,19 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:tech/screens/home.dart';
+import 'package:tech/screens/makeExam/makeExam2.dart';
 import 'package:tech/widgets/buttons.dart';
 import 'package:tech/widgets/makeExamInfoItem.dart';
 
-import '../constants.dart';
+import '../../constants.dart';
 
-class MakeExam extends StatefulWidget {
+class MakeExamP1 extends StatefulWidget {
   @override
-  _MakeExamState createState() => _MakeExamState();
+  _MakeExamP1State createState() => _MakeExamP1State();
 }
 
-class _MakeExamState extends State<MakeExam> {
+class _MakeExamP1State extends State<MakeExamP1> {
   String examSubTittle;
   String examTime;
   String instractorName;
@@ -137,7 +139,7 @@ class _MakeExamState extends State<MakeExam> {
                   children: <Widget>[
                     Text(
                       'By creating an Exam you agree to our',
-                      style: KText.copyWith(),
+                      style: KText,
                     ),
                     Text(
                       'Terms Of Service and Privacy Policy',
@@ -150,7 +152,13 @@ class _MakeExamState extends State<MakeExam> {
                   padding: EdgeInsets.symmetric(vertical: 10, horizontal: 50),
                   child: RoundedButton(
                     text: 'Next',
-                    fun: () {},
+                    fun: () {
+                      Navigator.pushReplacement(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => MakeExamP2(),
+                          ));
+                    },
                   ))
             ],
           ),
