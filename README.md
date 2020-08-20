@@ -1,5 +1,5 @@
 # tech App 
-- ###   An ُducational App using flutter and firebase .
+- ###   An Educational App using flutter and firebase .
 
 ![App Gif ](/assets/tech-gif.gif)
 
